@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Company Matcher | JobNova AI</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+    <img
+        src="../assets/logo/jobnova-logo.png"
+        alt="JobNova AI"
+        class="jobnova-logo"
+    >
+
+</div>
+
+<a href="../index.html" class="login-btn">
+
+← Back to Home
+
+</a>
+
+</nav>
+
+</header>
+
+<section class="resume-page">
+
+<div class="resume-container">
+
+<h1>🎯 Company Matcher</h1>
+
+<p>
+
+Upload your resume and paste a Job Description to get an AI-powered match score.
+
+</p>
+
+<div class="resume-dashboard">
+
+<div class="upload-box">
+
+<h2>Upload Resume</h2>
+
+<br>
+
+<input
+    type="file"
+    id="resumeFile"
+    accept=".pdf"
+>
+
+<br><br>
+
+<textarea
+    id="jobDescription"
+    rows="8"
+    placeholder="Paste Job Description Here..."
+    style="
+        width:100%;
+        padding:15px;
+        border-radius:12px;
+        background:#1F2937;
+        color:white;
+        border:none;
+        resize:none;
+    "
+></textarea>
+
+<br><br>
+
+<button
+    class="primary-btn"
+    id="matchBtn"
+>
+    Match Resume
+</button>
+
+</div>
+
+<div class="result-card">
+
+<div
+    id="loading"
+    class="loading-box"
+    style="display:none;"
+>
+
+    <div class="loader"></div>
+
+    <p>Analyzing Resume...</p>
+
+</div>
+
+<h2>Company Match Result</h2>
+
+<div id="result">
+
+    Upload resume and click Match Resume.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/matcher.js"></script>
+
+</body>
+
+</html>

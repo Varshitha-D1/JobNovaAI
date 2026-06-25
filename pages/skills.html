@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Skill Navigator | JobNova AI</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+    <img
+        src="../assets/logo/jobnova-logo.png"
+        alt="JobNova AI"
+        class="jobnova-logo"
+    >
+
+</div>
+
+<a href="../index.html" class="login-btn">
+
+← Back to Home
+
+</a>
+
+</nav>
+
+</header>
+
+<section class="resume-page">
+
+<div class="resume-container">
+
+<h1>📚 AI Skill Navigator</h1>
+
+<p>
+
+Discover the skills you need for your dream job using AI recommendations.
+
+</p>
+
+<div class="resume-dashboard">
+
+<div class="upload-box">
+
+<h2>Select Your Goal</h2>
+
+<br>
+
+<select id="careerGoal">
+
+<option>Software Engineer</option>
+
+<option>Data Scientist</option>
+
+<option>AI Engineer</option>
+
+<option>Web Developer</option>
+
+<option>Cyber Security</option>
+
+</select>
+
+<br><br>
+
+<button
+    class="primary-btn"
+    id="generateRoadmapBtn"
+>
+    Generate Roadmap
+</button>
+
+</div>
+
+<div class="result-card">
+
+<h2>Recommended Skills</h2>
+
+<div id="result">
+
+Select a career path and click
+Generate Roadmap.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/skills.js"></script>
+
+</body>
+
+</html>

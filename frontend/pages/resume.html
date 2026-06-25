@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer | JobNova AI</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="../assets/logo/jobnova-logo.png" alt="Logo">
+
+            <h2>JobNova AI</h2>
+
+        </div>
+
+        <a href="../index.html" class="login-btn">
+            ← Back to Home
+        </a>
+
+    </nav>
+
+</header>
+
+<section class="resume-page">
+
+    <div class="resume-container">
+
+        <h1>📄 Resume Analyzer</h1>
+
+        <p>
+            Upload your resume and receive an AI-powered ATS score,
+            keyword analysis, and personalized improvement suggestions.
+        </p>
+<div class="resume-dashboard">
+
+    <div class="upload-box">
+
+        <div class="upload-icon">☁️</div>
+
+        <h3>Drag & Drop Resume</h3>
+
+        <p>or upload your PDF file</p>
+
+        <input type="file">
+
+        <button class="primary-btn">
+            Analyze Resume
+        </button>
+
+    </div>
+
+    <div class="result-card">
+        <div id="loading" class="loading-box">
+
+    <div class="loader"></div>
+
+    <p>Analyzing Resume with AI...</p>
+
+</div>
+
+
+        <h2>ATS Score</h2>
+
+        <div class="progress-bar">
+
+            <div class="progress-fill score"></div>
+
+        </div>
+
+        <h1>92%</h1>
+
+        <hr>
+
+        <h3>Suggestions</h3>
+
+        <ul>
+
+            <li>✅ Improve Professional Summary</li>
+
+            <li>✅ Add more action verbs</li>
+
+            <li>✅ Include measurable achievements</li>
+
+            <li>✅ Increase ATS Keywords</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+</section>
+
+<script src="../js/resume.js"></script>
+
+</body>
+</html>
