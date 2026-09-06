@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Interview Coach | JobNova AI</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+    <img
+        src="../assets/logo/jobnova-logo.png"
+        alt="JobNova AI"
+        class="jobnova-logo"
+    >
+
+</div>
+
+<a href="../index.html" class="login-btn">
+
+← Back to Home
+
+</a>
+
+</nav>
+
+</header>
+
+<section class="resume-page">
+
+<div class="resume-container">
+
+<h1>🎤 AI Interview Coach</h1>
+
+<p>
+
+Generate AI-powered interview questions based on your resume and job description.
+
+</p>
+
+<div class="resume-dashboard">
+
+<div class="upload-box">
+
+<h2>Upload Resume</h2>
+
+<br>
+
+<input
+    type="file"
+    id="resumeFile"
+    accept=".pdf"
+>
+
+<br><br>
+
+<textarea
+    id="jobDescription"
+    rows="8"
+    placeholder="Paste Job Description Here..."
+    style="
+        width:100%;
+        padding:15px;
+        border-radius:12px;
+        background:#1F2937;
+        color:white;
+        border:none;
+    "
+></textarea>
+
+<br><br>
+
+<button
+    class="primary-btn"
+    id="startInterviewBtn"
+>
+    Generate Questions
+</button>
+
+</div>
+
+<div class="result-card">
+
+<h2>Interview Questions</h2>
+
+<div id="result">
+
+Upload resume and click Generate Questions.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/interview.js"></script>
+
+</body>
+
+</html>
