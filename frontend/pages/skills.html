@@ -23,9 +23,11 @@
 
 <div class="logo">
 
-<img src="../assets/logo/jobnova-logo.png" alt="Logo">
-
-<h2>JobNova AI</h2>
+    <img
+        src="../assets/logo/jobnova-logo.png"
+        alt="JobNova AI"
+        class="jobnova-logo"
+    >
 
 </div>
 
@@ -59,7 +61,7 @@ Discover the skills you need for your dream job using AI recommendations.
 
 <br>
 
-<select>
+<select id="careerGoal">
 
 <option>Software Engineer</option>
 
@@ -75,10 +77,11 @@ Discover the skills you need for your dream job using AI recommendations.
 
 <br><br>
 
-<button class="primary-btn">
-
-Generate Roadmap
-
+<button
+    class="primary-btn"
+    id="generateRoadmapBtn"
+>
+    Generate Roadmap
 </button>
 
 </div>
@@ -87,23 +90,12 @@ Generate Roadmap
 
 <h2>Recommended Skills</h2>
 
-<ul>
+<div id="result">
 
-<li>✅ Data Structures & Algorithms</li>
+Select a career path and click
+Generate Roadmap.
 
-<li>✅ Python Programming</li>
-
-<li>✅ SQL & Databases</li>
-
-<li>✅ Git & GitHub</li>
-
-<li>✅ Object Oriented Programming</li>
-
-<li>✅ Communication Skills</li>
-
-<li>✅ System Design Basics</li>
-
-</ul>
+</div>
 
 </div>
 
@@ -112,6 +104,8 @@ Generate Roadmap
 </div>
 
 </section>
+
+<script src="../js/skills.js"></script>
 
 </body>
 

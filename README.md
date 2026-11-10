@@ -183,39 +183,23 @@ The application will open in your browser.
 
 
 # 📁 Project Structure
-
-```text
+```
 JobNovaAI/
-│
-├── assets/
-│   ├── icons/
-│   ├── illustartions/
-│   └── logo/
 │
 ├── backend/
 │   ├── agents/
-│   │   ├── hire_agent.py
-│   │   ├── interview_agent.py
-│   │   ├── judge_agent.py
-│   │   ├── matcher.py
-│   │   ├── ranking_agent.py
-│   │   ├── reject_agent.py
-│   │   ├── report_generator.py
-│   │   ├── resume_parser.py
-│   │   ├── skill_gap.py
-│   │   └── summary_agent.py
-│   │
 │   └── main.py
 │
-├── css/
-├── js/
-├── pages/
 ├── frontend/
+│   ├── assets/
+│   ├── js/
+│   ├── pages/
+│   ├── index.html
+│   └── style.css
 │
 ├── .gitignore
 ├── requirements.txt
-├── README.md
-└── index.html
+└── README.md
 ```
 
 

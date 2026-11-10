@@ -23,9 +23,11 @@
 
 <div class="logo">
 
-<img src="../assets/logo/jobnova-logo.png" alt="Logo">
-
-<h2>JobNova AI</h2>
+    <img
+        src="../assets/logo/jobnova-logo.png"
+        alt="JobNova AI"
+        class="jobnova-logo"
+    >
 
 </div>
 
@@ -47,8 +49,7 @@
 
 <p>
 
-Practice interviews with AI, receive instant feedback, improve confidence,
-and prepare for your dream company.
+Generate AI-powered interview questions based on your resume and job description.
 
 </p>
 
@@ -56,69 +57,52 @@ and prepare for your dream company.
 
 <div class="upload-box">
 
-<h2>Select Interview Type</h2>
+<h2>Upload Resume</h2>
 
 <br>
 
-<select>
-
-<option>HR Interview</option>
-
-<option>Technical Interview</option>
-
-<option>Behavioral Interview</option>
-
-<option>Group Discussion</option>
-
-</select>
+<input
+    type="file"
+    id="resumeFile"
+    accept=".pdf"
+>
 
 <br><br>
 
-<button class="primary-btn">
+<textarea
+    id="jobDescription"
+    rows="8"
+    placeholder="Paste Job Description Here..."
+    style="
+        width:100%;
+        padding:15px;
+        border-radius:12px;
+        background:#1F2937;
+        color:white;
+        border:none;
+    "
+></textarea>
 
-Start Interview
+<br><br>
 
+<button
+    class="primary-btn"
+    id="startInterviewBtn"
+>
+    Generate Questions
 </button>
 
 </div>
 
 <div class="result-card">
 
-<h2>AI Feedback</h2>
+<h2>Interview Questions</h2>
 
-<br>
+<div id="result">
 
-✅ Confidence Score
+Upload resume and click Generate Questions.
 
-<br><br>
-
-⭐⭐⭐⭐☆
-
-<br><br>
-
-✅ Communication
-
-<br><br>
-
-⭐⭐⭐⭐⭐
-
-<br><br>
-
-✅ Technical Knowledge
-
-<br><br>
-
-⭐⭐⭐⭐☆
-
-<br><br>
-
-💡 AI Suggestion
-
-<p>
-
-Speak a little slower and provide more project examples.
-
-</p>
+</div>
 
 </div>
 
@@ -127,6 +111,8 @@ Speak a little slower and provide more project examples.
 </div>
 
 </section>
+
+<script src="../js/interview.js"></script>
 
 </body>
 
