@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analyzer | JobNova AI</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../assets/logo/jobnova-logo.png" alt="JobNova AI" class="jobnova-logo">
+        </div>
+        <a href="dashboard.html" class="login-btn">← Back to Dashboard</a>
+    </nav>
+</header>
+
+<section class="resume-page">
+    <div class="resume-container">
+        <h1>📄 Resume Analyzer</h1>
+        <p>
+            Upload your resume and paste the job description to get an AI summary,
+            skill-gap breakdown, interview questions, and hiring verdict.
+        </p>
+
+        <div class="resume-dashboard resume-dashboard-vertical">
+            <div class="upload-box resume-upload-box agent-input-box">
+                <div class="upload-icon">☁️</div>
+                <h3>Upload Resume</h3>
+                <p>Select your PDF resume and paste the target job description.</p>
+                <input type="file" id="resumeFile" accept=".pdf,application/pdf">
+                <textarea id="jobDescription" placeholder="Paste Job Description Here..." rows="6"></textarea>
+                <button class="primary-btn" id="analyzeBtn">Analyze Resume</button>
+            </div>
+
+            <div class="result-card resume-result-card">
+                <div id="loading" class="loading-box" style="display:none;">
+                    <div class="loader"></div>
+                    <p>Analyzing Resume with AI...</p>
+                </div>
+                <h2>AI Resume Analysis</h2>
+                <div id="result">Upload a resume and click Analyze Resume.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../js/resume.js"></script>
+</body>
+</html>

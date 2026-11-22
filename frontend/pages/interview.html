@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Coach | JobNova AI</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo"><img src="../assets/logo/jobnova-logo.png" alt="JobNova AI" class="jobnova-logo"></div>
+        <a href="../index.html" class="login-btn">← Back to Home</a>
+    </nav>
+</header>
+<section class="resume-page">
+    <div class="resume-container agent-page-container">
+        <h1>🎤 AI Interview Coach</h1>
+        <p>Generate focused interview questions based on your resume and target job.</p>
+        <div class="resume-dashboard resume-dashboard-vertical">
+            <div class="upload-box resume-upload-box agent-input-box">
+                <div class="upload-icon">📄</div>
+                <h3>Upload Resume</h3>
+                <p>Select your PDF resume and add the job description.</p>
+                <input type="file" id="resumeFile" accept=".pdf,application/pdf">
+                <textarea id="jobDescription" rows="5" placeholder="Paste Job Description Here..."></textarea>
+                <button class="primary-btn" id="startInterviewBtn">Generate Questions</button>
+            </div>
+            <div class="result-card resume-result-card">
+                <div id="loading" class="loading-box" style="display:none;">
+                    <div class="loader"></div><p>Preparing interview questions...</p>
+                </div>
+                <h2>Interview Questions</h2>
+                <div id="result">Upload a resume and click Generate Questions.</div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../js/interview.js"></script>
+</body>
+</html>

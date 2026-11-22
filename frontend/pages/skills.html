@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Navigator | JobNova AI</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo"><img src="../assets/logo/jobnova-logo.png" alt="JobNova AI" class="jobnova-logo"></div>
+        <a href="../index.html" class="login-btn">← Back to Home</a>
+    </nav>
+</header>
+<section class="resume-page">
+    <div class="resume-container agent-page-container">
+        <h1>📚 AI Skill Navigator</h1>
+        <p>Choose a career path to receive a focused roadmap of skills to learn next.</p>
+        <div class="resume-dashboard resume-dashboard-vertical">
+            <div class="upload-box resume-upload-box agent-input-box">
+                <div class="upload-icon">🧭</div>
+                <h3>Select Your Goal</h3>
+                <p>Choose the career you want to work towards.</p>
+                <select id="careerGoal">
+                    <option>Software Engineer</option>
+                    <option>Data Scientist</option>
+                    <option>AI Engineer</option>
+                    <option>Web Developer</option>
+                    <option>Cyber Security</option>
+                </select>
+                <button class="primary-btn" id="generateRoadmapBtn">Generate Roadmap</button>
+            </div>
+            <div class="result-card resume-result-card">
+                <div id="loading" class="loading-box" style="display:none;">
+                    <div class="loader"></div><p>Creating your skill roadmap...</p>
+                </div>
+                <h2>Recommended Skills</h2>
+                <div id="result">Select a career path and click Generate Roadmap.</div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../js/skills.js"></script>
+</body>
+</html>
